@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script src="./script.js" defer></script>
+    <title>Boggle Team 1</title>
   </head>
   <body>
-    let y=10;
-    let x =5;
+    <div class="wrapper">
+      <div class="content__body">
+        <div class="info">
+          <div class="info__timer">
+            <span>Время</span>
+            <div class="timer" id="countdown">3:00</div>
+          </div>
+          <div class="info__word">
+            <span>Слово</span>
+            <div class="word"></div>
+          </div>
+          <div class="info__score">
+            <span>Счёт</span>
+            <div class="score">0</div>
+          </div>
+        </div>
+        <div class="playground">
+          <div class="game">
+            <div class="block"><button class="letter" id="1"></button></div>
+            <div class="block"><button class="letter" id="2"></button></div>
+            <div class="block"><button class="letter" id="3"></button></div>
+            <div class="block"><button class="letter" id="4"></button></div>
+            <div class="block"><button class="letter" id="5"></button></div>
+            <div class="block"><button class="letter" id="6"></button></div>
+            <div class="block"><button class="letter" id="7"></button></div>
+            <div class="block"><button class="letter" id="8"></button></div>
+            <div class="block"><button class="letter" id="9"></button></div>
+            <div class="block"><button class="letter" id="10"></button></div>
+            <div class="block"><button class="letter" id="11"></button></div>
+            <div class="block"><button class="letter" id="12"></button></div>
+            <div class="block"><button class="letter" id="13"></button></div>
+            <div class="block"><button class="letter" id="14"></button></div>
+            <div class="block"><button class="letter" id="15"></button></div>
+            <div class="block"><button class="letter" id="16"></button></div>
+          </div>
+          <button class="mix" id="show-button">Завершить игру</button>
+          <div id="prompt-form-container">
+            <form id="prompt-form">
+              <div id="prompt-message"></div>
+              <input name="text" type="text" />
+              <input type="submit" value="Ok" />
+              <input type="button" name="cancel" value="Отмена" />
+            </form>
+          </div>
+        </div>
+        <div class="results">
+          <div class="results__table">
+            <div class="table__head">
+              <div class="head__name">Имя</div>
+              <div class="head__score">Результат</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
